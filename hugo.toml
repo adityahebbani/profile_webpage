@@ -1,0 +1,4 @@
+baseURL = "https://adityahebbani.github.io/"
+languageCode = "en-us"
+title = "A.Hebbani's Profile"
+theme = "hugo-profile"
