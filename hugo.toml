@@ -2,3 +2,287 @@ baseURL = "https://adityahebbani.github.io/"
 languageCode = "en-us"
 title = "A.Hebbani's Profile"
 theme = "hugo-profile"
+
+outputs:
+    home:
+        - "HTML"
+        - "RSS"
+        - "JSON"
+    page:
+        - "HTML"
+        - "RSS"
+
+Paginate: 3
+enableRobotsTXT: true
+# disqusShortname: your-disqus-shortname
+# googleAnalytics: G-MEASUREMENT_ID
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+
+Menus:
+    main:
+        - identifier: blogs
+          name: Blog
+          title: Blog posts
+          url: /blogs
+          weight: 0
+        # - identifier: gallery
+        #   name: Gallery
+        #   title: Blog posts
+        #   url: /gallery
+        #   weight: 2
+        #Dropdown menu
+        # - identifier: dropdown
+        #   title: Example dropdown menu
+        #   name: Dropdown
+        #   weight: 3
+        # - identifier: dropdown1
+        #   title: example dropdown 1
+        #   name: example 1
+        #   url: /#
+        #   parent: dropdown
+        #   weight: 1
+        # - identifier: dropdown2
+        #   title: example dropdown 2
+        #   name: example 2
+        #   url: /#
+        #   parent: dropdown
+        #   weight: 2
+
+params:
+    title: "A.Hebbani's Profile"
+    description: Aref Malek Personal Website
+    # staticPath: "/static" # The path to serve the static files from
+    favicon: "/icons/sapling.png"
+
+    # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+    # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+    # Note the lack of "" in true, it should be of boolean type.
+    useBootstrapCDN: false
+
+    # If you want to load dynamically responsive images from Cloudinary
+    # This requires your images to be uploaded + hosted on Cloudinary
+    # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+    # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+    # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+    mathjax: false
+
+    # Whether the fade animations on the home page will be enabled
+    animate: true
+
+    theme:
+        # disableThemeToggle: true
+        # defaultTheme: "light" # dark
+
+    font:
+        fontSize: 1rem # default: 1rem
+        fontWeight: 400 # default: 400
+        lineHeight: 1.5 # default: 1.5
+        textAlign: left # default: left
+
+    # color preference
+    # color:
+    #   textColor:
+    #   secondaryTextColor:
+    #   backgroundColor:
+    #   secondaryBackgroundColor:
+    #   primaryColor:
+    #   secondaryColor:
+
+    #   darkmode:
+    #     textColor:
+    #     secondaryTextColor:
+    #     backgroundColor:
+    #     secondaryBackgroundColor:
+    #     primaryColor:
+    #     secondaryColor:
+
+    # If you want to customize the menu, you can change it here
+    navbar:
+        align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+        # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+        # showBrandLogo: false # Show brand logo in nav bar | default is true
+        # brandName: "Aditya Hebbani" # Brand name for the brand | default is the title variable
+        disableSearch: false
+        # searchPlaceholder: "Search"
+        stickyNavBar:
+            enable: true
+            showOnScrollUp: true
+        menus:
+            disableAbout: false
+            disableExperience: false
+            disableEducation: false
+            disableProjects: false
+            disableAchievements: false
+            disableContact: false
+
+    # Hero
+    hero:
+        enable: true
+        intro: "Hello, my name is "
+        title: "Aditya Hebbani."
+        subtitle: "Computer Engineering Student"
+        content: "Currently a Computer Engineering Student at Purdue University."
+        image: /images/waterfall.jpeg
+        bottomImage:
+            enable: false
+        roundImage: false # Make hero image circular | default false
+        button:
+            enable: true
+            name: "Resume"
+            url: "/assets/resume.pdf"
+            download: false
+            newPage: true
+        socialLinks:
+            fontAwesomeIcons:
+                - icon: fab fa-github
+                  url: https://www.github.com/adityahebbani
+                - icon: fab fa-linkedin
+                  url: https://www.linkedin.com/in/adityahebbani
+            customIcons:
+                - icon: "/icons/gscholar.png"
+                  url: "https://scholar.google.com/citations?user=92TBhCYAAAAJ"
+
+    # About
+    about:
+        enable: true
+        title: "About Me"
+        image: "/images/bay_of_fire.jpg"
+        content: |-
+            I'm currently a CompE @ Purdue, graduating May 2026! 
+
+        skills:
+            enable: true
+            title: "My skills:"
+            items:
+                - "Python"
+
+    # Experience
+    experience:
+        enable: true
+        # title: "Custom Name"
+        items:
+            - job: "Software Development Engineer"
+              company: "Amazon"
+              companyUrl: "https://aws.amazon.com/"
+              date: "May 2022 - Aug 2022"
+              featuredLink:
+                  enable: true
+                  url: "https://github.com/aws-samples/aws-panorama-samples/tree/main/tools/sideloading"
+                  name: "Sideloading Github Repository"
+              info:
+                  enable: true
+                  content: Built sideloading service that reduces wait times by 70%.
+              content: |
+                  Interned on [AWS Panorama](https://aws.amazon.com/panorama/) on the application platform team. Helped to reduce deployment times for ML applications.
+                    - Introduced a sideloading feature that reduces wait times by 70%. Aimed to improve developer experience with an simpler, more efficient interface for Panorama
+                    - Built a device-side server that manages internal device state while receiving customer data
+                  Sideloading is now live and accessible on [AWS Docs](https://docs.aws.amazon.com/panorama/latest/dev/panorama-samples.html#samples-more).
+
+    # Education
+    education:
+        enable: true
+        # title: "Custom Name"
+        index: false
+        items:
+            - title: "Bachelor of Science in Computer Engineering"
+              school:
+                  name: "Purdue University, West Lafayette"
+                  url: "https://purdue.edu"
+              date: "2020 - 2024"
+              GPA: "3. / 4.0"
+              content: |-
+                  Concentration in AI/ML and double major in Math.
+
+                  Extracurricular Activities
+                    - Image Segmentation Lead at the Collaborative Robotics Lab
+                    - Guidance and Navigation Team member at Purdue Aerial Robotics Team
+
+    # Achievements
+    achievements:
+        enable: true
+        # title: "Custom Name"
+        items:
+            - title: Outstanding Freshman / Sophomore
+              content: 1 of 2 students selected from 180+ for contributions to VIP project
+              url: https://engineering.purdue.edu/VIP/news/vip-awards-announced-for-spring-2021
+              image: /icons/coding.svg
+
+    # projects
+    projects:
+        enable: true
+        # title: "Projects"
+        content: "More on github!"
+        items:
+
+            - title: Electoral Analysis
+              content: Analsis that shows how weighted votes of the electoral college leads to discrimination towards race, age, and gender.
+              image: /images/projects/electoral.png
+              featured:
+                  name: Medium Article Explanation
+                  link: https://sanjay-r-92099.medium.com/americas-dark-voting-legacy-37824620426a
+              badges:
+                  - "Python"
+                  - "Pandas"
+                  - "Seaborne"
+                  - "Numpy"
+              links:
+                  - icon: fab fa-github
+                    url: https://github.com/arefmalek/Electoral_census
+
+
+    #Contact
+    contact:
+        enable: true
+        title: "Contact Info"
+        content: Message me anytime.
+        email: ahebbani@purdue.edu
+        btnName: Email
+        # formspree:
+        #   enable: true # `contact.email` value will be ignored
+        #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+        #   emailCaption: "Enter your email address"
+        #   messageCaption: "Enter your message here"
+
+    footer:
+        recentPosts:
+            path: "blogs"
+            count: 3
+            title: Recent Posts
+            enable: true
+            disableFeaturedImage: false
+        socialNetworks:
+            github: https://github.com/adityahebbani
+            linkedin: https://linkedin.com/in/adityahebbani
+
+    # List pages like blogs and posts
+    listPages:
+        disableFeaturedImage: false
+
+    # Single pages like blog and post
+    singlePages:
+        readTime:
+            enable: true
+            content: "min read"
+        scrollprogress:
+            enable: true
+
+    # For translations
+    terms:
+        read: "Read"
+        toc: "Table Of Contents"
+        copyright: "All rights reserved"
+        pageNotFound: "Page not found"
+        emailText: "Check out this site"
+
+    # datesFormat:
+    #     article: "Jan 2, 2000"
+    #     articleList: "Jan 2, 2024"
+    #     articleRecent: "Jan 2, 2024"
+
+    #customScripts: -| # You can add custom scripts which will be added before </body> tag
+    #  <script type="text/javascript"><!-- any script here --></script>
