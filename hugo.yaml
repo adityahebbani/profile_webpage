@@ -191,7 +191,7 @@ params:
                   name: "Purdue University, West Lafayette"
                   url: "https://purdue.edu"
               date: "2020 - 2024"
-              GPA: "3.7 / 4.0"
+              GPA: "0.0 / 4.0"
               content: |-
                   Concentration in AI/ML and double major in Math.
 
@@ -216,15 +216,15 @@ params:
 
             - title: LSTM Stocks Analyzer
               content: Complex Long-Short Term Memory model that simulatneously learns/predicts recent data for 500 companies, useful for high-frequency trading.
-              image: /images/projects/electoral.png
+              image: /icons/stocks.jpeg
               featured:
-                  name: Medium Article Explanation
-                  link: https://sanjay-r-92099.medium.com/americas-dark-voting-legacy-37824620426a
+                  name: High Frequency Trading
+                  link: https://arxiv.org/abs/2101.07107
               badges:
                   - "Python"
-                  - "Pandas"
-                  - "Seaborne"
                   - "Numpy"
+                  - "Tensorflow/Keras"
+                  - "Yfinance"
               links:
                   - icon: fab fa-github
                     url: https://github.com/adityahebbani/
