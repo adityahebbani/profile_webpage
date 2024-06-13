@@ -54,9 +54,9 @@ Menus:
 
 params:
     title: "A.Hebbani's Profile"
-    description: Aref Malek Personal Website
+    description: A.Hebbani Profile Website
     # staticPath: "/static" # The path to serve the static files from
-    favicon: "/icons/sapling.png"
+    favicon: "/icons/computer.jpeg"
 
     # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
     # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
@@ -126,7 +126,7 @@ params:
         intro: "Hello, my name is "
         title: "Aditya Hebbani."
         subtitle: "Computer Engineering Student"
-        content: "Currently a Computer Engineering Student at Purdue University."
+        content: "Currently a Computer Engineering Student at Purdue University. Image Segmentation Lead at the Collaborative Robotics Lab, working in."
         image: /images/waterfall.jpeg
         bottomImage:
             enable: false
@@ -166,22 +166,19 @@ params:
         enable: true
         # title: "Custom Name"
         items:
-            - job: "Software Development Engineer"
-              company: "Amazon"
-              companyUrl: "https://aws.amazon.com/"
-              date: "May 2022 - Aug 2022"
+            - job: "AI Systems Engineer"
+              company: "Algonomy"
+              companyUrl: "https://algonomy.com"
+              date: "May 2024 - Aug 2024"
               featuredLink:
                   enable: true
-                  url: "https://github.com/aws-samples/aws-panorama-samples/tree/main/tools/sideloading"
-                  name: "Sideloading Github Repository"
+                  url: "https://github.com/"
+                  name: "AI Data Automation Software"
               info:
                   enable: true
-                  content: Built sideloading service that reduces wait times by 70%.
+                  content: None
               content: |
-                  Interned on [AWS Panorama](https://aws.amazon.com/panorama/) on the application platform team. Helped to reduce deployment times for ML applications.
-                    - Introduced a sideloading feature that reduces wait times by 70%. Aimed to improve developer experience with an simpler, more efficient interface for Panorama
-                    - Built a device-side server that manages internal device state while receiving customer data
-                  Sideloading is now live and accessible on [AWS Docs](https://docs.aws.amazon.com/panorama/latest/dev/panorama-samples.html#samples-more).
+                    Description.
 
     # Education
     education:
@@ -194,7 +191,7 @@ params:
                   name: "Purdue University, West Lafayette"
                   url: "https://purdue.edu"
               date: "2020 - 2024"
-              GPA: "3. / 4.0"
+              GPA: "3.7 / 4.0"
               content: |-
                   Concentration in AI/ML and double major in Math.
 
@@ -207,20 +204,18 @@ params:
         enable: true
         # title: "Custom Name"
         items:
-            - title: Outstanding Freshman / Sophomore
-              content: 1 of 2 students selected from 180+ for contributions to VIP project
-              url: https://engineering.purdue.edu/VIP/news/vip-awards-announced-for-spring-2021
-              image: /icons/coding.svg
+            - title: Dean's List / Semester Honors
+
 
     # projects
     projects:
         enable: true
-        # title: "Projects"
+        title: "Projects"
         content: "More on github!"
         items:
 
-            - title: Electoral Analysis
-              content: Analsis that shows how weighted votes of the electoral college leads to discrimination towards race, age, and gender.
+            - title: LSTM Stocks Analyzer
+              content: Complex Long-Short Term Memory model that simulatneously learns/predicts recent data for 500 companies, useful for high-frequency trading.
               image: /images/projects/electoral.png
               featured:
                   name: Medium Article Explanation
@@ -232,7 +227,7 @@ params:
                   - "Numpy"
               links:
                   - icon: fab fa-github
-                    url: https://github.com/arefmalek/Electoral_census
+                    url: https://github.com/adityahebbani/
 
 
     #Contact
