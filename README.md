@@ -34,3 +34,5 @@ hugo -t hugo-profile
 Then go into the public folder and commit and push to update the static items (adityahebbani.github.io) repository.
 It will then automatically deploy and you can visit it at adityahebbani.github.io.
 
+It does take a minute to do this.
+
