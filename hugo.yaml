@@ -236,6 +236,8 @@ params:
         # title: "Custom Name"
         items:
             - title: Dean's List / Semester Honors
+            - content: "Rewarded for high academic performance"
+            - image: icons/gradcap.svg
 
 
     # projects
