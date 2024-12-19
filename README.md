@@ -30,3 +30,7 @@ To populate the github.io (and therefore the public folder in this repo), run:
 ```
 hugo -t hugo-profile
 ```
+
+Then go into the public folder and commit and push to update the static items (adityahebbani.github.io) repository.
+It will then automatically deploy and you can visit it at adityahebbani.github.io.
+
